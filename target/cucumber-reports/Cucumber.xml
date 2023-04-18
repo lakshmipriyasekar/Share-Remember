@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="25.263">
+<testcase classname="Verify Login Page" name="01 Login a non-account user" time="9.062">
+<system-out><![CDATA[Given Login as NonAccountUser...............................................passed
+Then Verify the error message as Invalid Email or Password..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Login Page" name="02 Login a existing account user with wrong password" time="4.209">
+<system-out><![CDATA[Given Login as AccountUserwithwrongpassword.................................passed
+Then Verify the error message as Wrong password.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Login Page" name="03 Login a existing account user" time="11.101">
+<system-out><![CDATA[Given Login as AccountUser..................................................passed
+Then Verify the ProfileEmail in MyProfile matches given Emailid.............passed
+Given Logout as AccountUser.................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
