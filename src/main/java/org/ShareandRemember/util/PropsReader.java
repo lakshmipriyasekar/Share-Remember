@@ -60,10 +60,12 @@ public class PropsReader {
 		PropsReader.wrongaccountUserPassword = readPropertiesFile(getBaseConfig()).getProperty("Password1");
 		
 	}
+	
 	public String randomEmail(int numCount) {
 		String name = "LP" +RandomStringUtils.randomNumeric(numCount) + "@Spritle.com";
 		return name;
 	}
+	
 	public static Properties readPropertiesFile(String fileName) {
 		FileInputStream fis = null;
 		Properties prop = null;
